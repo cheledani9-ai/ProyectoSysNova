@@ -139,9 +139,12 @@ button {
 
 .carousel-section {
     background: #9eb8ff;
-    padding: 50px 20px 0;
+    padding-top: 40px;
     text-align: center;
     padding-bottom: 30px;
+    width: 100%;
+
+
 }
 
 .carousel-section h2 {
@@ -152,7 +155,7 @@ button {
 }
 
 .carousel-section p {
-    color: #7a7777;
+    color: black;
     font-size: 15px;
     margin-bottom: 30px;
 }
@@ -165,6 +168,13 @@ button {
     margin: 0 auto;
 }
 
+.carousel-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
 .carousel-track {
     display: flex;
     transition: transform 0.5s ease;
@@ -172,7 +182,7 @@ button {
 
 .carousel-slide {
     min-width: 100%;
-    height: 320px;
+    height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -302,9 +312,13 @@ span {
     font-weight: bold;
 }
 
+.descripcion {
+    color: #666;
+}
+
+
 .contenido {
     background-color: #9eb8ff;
-
     width: auto;
     padding: 20px;
     border-bottom: 1px solid #2a2fbb;
@@ -324,6 +338,12 @@ span {
     padding: 2%;
     overflow: hidden;
 } 
+
+.objetivo img {
+    width: 200px;
+    height: auto;
+}
+
 
 /* categorias destacadas */
 
@@ -761,6 +781,17 @@ span {
         height: auto;
         padding-left: 60px;
     
+    }
+
+    .carousel-slide {
+        height: 200px;
+    }
+
+    .carousel-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
     }
 
     /* Footer */
