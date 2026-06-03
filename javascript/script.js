@@ -32,8 +32,6 @@ window.addEventListener ('click', function(e) {
     }
 });
 
-
-
 // Submit inicio de sesion
 document.querySelector('#modalLogin form').addEventListener('submit', function(e) {
     e.preventDefault();
@@ -81,12 +79,6 @@ function mostrarToast(mensaje) {
     }, 3000);
 }
 
-// Formulario contacto
-document.querySelector('.form1').addEventListener('submit', function(e) {
-    e.preventDefault();
-    mostrarToast('Mensaje enviado correctamente');
-    this.reset();
-});
 
 
 // boton hamburguesa
