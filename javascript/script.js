@@ -32,6 +32,49 @@ window.addEventListener ('click', function(e) {
     }
 });
 
+// Ventana emergente inicio de sesion
+
+document.querySelector('#modalLogin form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    cerrarModalLogin();
+    mostrarToast('Inicio de sesión exitoso, ¡bienvenido!');
+});
+
+function mostrarToast(mensaje) {
+    const toast = document.createElement('div');
+    toast.textContent = mensaje;
+    toast.style.cssText = `
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background: #2a2fbb;
+        color: white;
+        padding: 14px 22px;
+        border-radius: 12px;
+        font-size: 14px;
+        font-family: 'Segoe UI', sans-serif;
+        box-shadow: 0 4px 15px rgba(42,47,187,0.3);
+        z-index: 9999;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    `;
+
+    document.body.appendChild(toast);
+    setTimeout(() => toast.style.opacity = '1', 10);
+    setTimeout(() => {
+        toast.style.opacity = '0';
+        setTimeout(() => toast.remove(), 300);
+    }, 3000);
+}
+
+//Registro de empresa 
+
+document.querySelector('#modal form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    cerrarModal();
+    mostrarToast('Empresa registrada exitosamente, ¡bienvenido a SysNova!');
+});
+
 
 // boton hamburguesa
 function toggleMenu() {
