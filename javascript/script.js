@@ -32,21 +32,33 @@ window.addEventListener ('click', function(e) {
     }
 });
 
-// Ventana emergente inicio de sesion
 
+
+// Submit inicio de sesion
 document.querySelector('#modalLogin form').addEventListener('submit', function(e) {
     e.preventDefault();
     cerrarModalLogin();
     mostrarToast('Inicio de sesión exitoso, ¡bienvenido!');
+    this.reset();
 });
 
+// Submit registro de empresa
+document.querySelector('#modal form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    cerrarModal();
+    mostrarToast('Empresa registrada exitosamente, ¡bienvenido a SysNova!');
+    this.reset();
+});
+
+// Toast
 function mostrarToast(mensaje) {
     const toast = document.createElement('div');
     toast.textContent = mensaje;
     toast.style.cssText = `
         position: fixed;
-        bottom: 30px;
-        right: 30px;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
         background: #2a2fbb;
         color: white;
         padding: 14px 22px;
@@ -57,8 +69,10 @@ function mostrarToast(mensaje) {
         z-index: 9999;
         opacity: 0;
         transition: opacity 0.3s ease;
+        width: 90%;
+        max-width: 360px;
+        text-align: center;
     `;
-
     document.body.appendChild(toast);
     setTimeout(() => toast.style.opacity = '1', 10);
     setTimeout(() => {
@@ -66,14 +80,6 @@ function mostrarToast(mensaje) {
         setTimeout(() => toast.remove(), 300);
     }, 3000);
 }
-
-//Registro de empresa 
-
-document.querySelector('#modal form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    cerrarModal();
-    mostrarToast('Empresa registrada exitosamente, ¡bienvenido a SysNova!');
-});
 
 
 // boton hamburguesa
