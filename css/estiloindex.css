@@ -1,5 +1,5 @@
 * {
-    outline: 1px solid red; 
+    /* outline: 1px solid red; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -642,6 +642,10 @@ span {
         margin-right: 0;
     }
 
+    .registro.abierto {
+        display: flex !important;
+    }
+
 
     /* Banner apilado */
     .banner {
@@ -774,13 +778,3 @@ span {
         padding: 25px 15px;
     }
 }
-
-
-
-
-
-
-
-
-
-
