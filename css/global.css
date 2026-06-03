@@ -1,0 +1,144 @@
+/* menu 
+header{
+        height: 5rem;
+        background: #FDF0D5;
+        border: 2px solid rgb(201, 102, 10);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+.menu   {
+        justify-content: center;
+        list-style: none;
+        display: flex;    
+        gap: 50px;
+        float:initial ;
+        }
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.menu li {
+    transition: transform 0.4s;
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.menu li:hover{
+        background-color: #F4A261;
+        border-radius: 20px;
+        padding: 8px;
+        transform: scale(1);
+        }
+
+.logo   {
+    height: 180px;
+    }
+        
+.registro {     
+        justify-content: center;
+        list-style: none;
+        display: flex;
+        gap: 2%;
+        margin-right: 1%;
+    } */
+
+
+
+/* ventana emegente registro */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+}
+
+/* Cuando se activa */
+
+.modal.activo {
+    display: flex;
+    opacity: 1;
+}
+
+/* Caja de modal */
+
+.modal-contenido form {
+    .modal-contenido form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* 👈 separación automática */
+}
+}
+
+.modal-contenido {
+    background: #ffffff;
+    padding: 60px;
+    border-radius: 12px;
+    width: 400px;
+    position: relative;
+
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+}
+
+/* Animacion al abrir */
+
+.modal.activo .modal-contenido {
+    transform: scale(1);
+}
+
+/* Boton cerrar */
+
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* input */
+
+.modal-contenido input,
+.modal-contenido textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+
+/* boton */
+
+.modal-contenido input[type="submit"] {
+    background: #f88425;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.modal-contenido input[type="submit"]:hover {
+    background: #e06f1a;
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/estiloAcerca.css">
+</head>
+<body>
+    <header>
+    <img src="../img/logo.png" class="logo">
+
+    <!-- Botón hamburguesa (solo visible en móvil) -->
+    <button class="hamburguesa" onclick="toggleMenu()">&#9776;</button>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="categorias.html">Categorias</a></li>
+                <li><a href="acercade.html">Acerca de</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul> 
+        </nav>
+            <ul class="registro">
+                <li><button onclick="abrirModalLogin()">Iniciar sesión</button></li>
+                <li><button onclick="abrirModal()">Registrar mi empresa</button></li>
+            </ul>  
+    </header>
+    
+<section class="about">
+
+    <div class="about-content">
+
+        <div class="about-text">
+
+            <span>ACERCA DE NOSOTROS</span>
+
+            <h2>
+                Impulsamos negocios,
+                conectamos oportunidades
+            </h2>
+
+            <p>
+                SysNova nace con la idea de ayudar a pequeñas y medianas empresas
+                a tener mayor visibilidad dentro del entorno digital.
+                Nuestra plataforma busca conectar negocios locales con personas
+                interesadas en descubrir productos, servicios y oportunidades
+                dentro de su comunidad.
+            </p>
+
+            <p>
+                Creemos que cada emprendimiento tiene potencial para crecer cuando
+                cuenta con las herramientas adecuadas. Por eso desarrollamos un
+                espacio moderno, accesible y fácil de usar, donde las empresas
+                puedan promocionarse, aumentar su alcance y fortalecer su presencia
+                en línea.
+            </p>
+
+            <button><a href="servicios.html">Conocer más</a></button>
+
+        </div>
+
+        <div class="about-boxes">
+
+            <div class="about-card">
+                <h3>Misión</h3>
+
+                <p>
+                    Brindar soluciones tecnológicas innovadoras y accesibles que optimicen 
+                    la gestión administrativa y el control de inventarios en pequeñas y 
+                    medianas empresas, ofreciendo sistemas eficientes, soporte técnico 
+                    confiable y atención personalizada que impulse su crecimiento y 
+                    competitividad
+                </p>
+            </div>
+
+            <div class="about-card">
+                <h3>Visión</h3>
+
+                <p>
+                    Ser una empresa líder en soluciones tecnológicas para PYMES a nivel 
+                    nacional, reconocida por su innovación, calidad de servicio y 
+                    compromiso con la transformación digital de los negocios. 
+                </p>
+            </div>
+
+            <div class="about-card">
+                <h3>Objetivos</h3>
+
+                <p>
+                    <ol>
+                    <li>Identificar necesidades de promoción digital</li>
+                    <li>Diseñar la estructura de la página web</li>
+                    <li>Desarrollar la página web utilizando herramientas básicas</li>
+                    <li>Evaluar la utilidad del sitio web como herramienta</li>
+                </p>
+            </div>
+        </div>
+    </div>
+</section> 
+
+    <!--- footer -->
+    <footer class="footer">   
+    <div class="footer_container">
+
+    <div class="footer-col">
+        <h3>SysNova</h3>
+        <p>Plataforma que impulsa el crecimiento de pequeñas y medianas empresas a través de visibilidad digital.</p>
+    </div>
+
+    <div class="footer-col">
+        <h3>Enlaces</h3>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="categorias.html">Categorias</a></li>
+            <li><a href="acercade.html">Acerca de</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-col">
+        <h3>Ayuda</h3>
+        <ul>
+            <li><a href="#">Preguntas frecuentes</a></li>
+            <li><a href="https://chat.whatsapp.com/Ka7jsr1b1MmJFiYyXJG0tu?s=cl&p=a&mlu=4">Soporte</a></li>
+            <li><a href="#">Términos</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-col">
+        <h3>Contacto</h3>
+        <ul>
+            <li>Email: info@sysnova.com</li>
+            <li>Tel: +503 0000-0000</li>
+            <li>San Salvador</li>
+        </ul>
+    </div>
+    </div>
+
+    <div class="footer-bottom">
+    <p>© 2026 SysNova - Todos los derechos reservados</p>
+    </div>
+</footer>
+</section>
+
+<!--Ventana emergente registro-->
+<div id="modal" class="modal">
+    <div class="modal-contenido">
+        <span class="cerrar" onclick="cerrarModal()">&times;</span>
+        <h2>Registro de Empresa</h2>
+
+        <form action="">
+        <label for="nombre" class="form-label">Nombre de la empresa</label>
+            <input type="text" placeholder="Escriba aqui" class="form-control" required>
+        <label for="Correo">Correo</label>
+            <input type="email" placeholder="Escriba aqui" class="form-control" required>
+        <label for="telefono">Telefono</label>
+            <input type="tel" placeholder="Escriba aqui" required>
+            <textarea placeholder="Descripcion" name="descripcion"></textarea>
+            <input type="submit" value="Registrar">
+        </form>
+    </div>
+</div>
+
+<!-- Ventana emergente inicio de sesion -->
+
+<div id="modalLogin" class="modal" >
+  <div class="modal-contenido">
+    <span class="cerrar" onclick="cerrarModalLogin()">&times;</span>
+    <h2>Inicia Sesión</h2>
+
+    <form action="">
+    <label for="correo">Correo</label>
+        <input type="email" placeholder="Escriba aqui" required>
+    <label for="password">Contraseña</label>
+        <input type="password" placeholder="Escriba aqui" required>
+        <h5 class="forgotpassword">¿Olvidaste tu contraseña?</h5>
+        <h5 class="forgotpassword"><a href="#" style="color: #2a2fbb"">Recuperar contraseña</a></h5>
+    <input type="submit" value="Iniciar Sesión">
+    </form>
+  </div>
+</div>
+<script src="../javascript/script.js"></script>
+</body>
+</html>

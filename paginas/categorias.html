@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorias - SysNova</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/estiloCat.css">
+</head>
+<body>
+<header>
+    <img src="../img/logo.png" class="logo">
+ 
+    <!-- Botón hamburguesa (solo visible en móvil) -->
+    <button class="hamburguesa" onclick="toggleMenu()">&#9776;</button>
+ 
+        <nav class="menu">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="categorias.html">Categorias</a></li>
+                <li><a href="acercade.html">Acerca de</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul> 
+        </nav>
+            <ul class="registro">
+                <li><button onclick="abrirModalLogin()">Iniciar sesión</button></li>
+                <li><button onclick="abrirModal()">Registrar mi empresa</button></li>
+            </ul>  
+</header>
+
+<!--Contenido -->
+
+    <main class="container">
+        <!--Subtitulo frase-->
+        <div class="row text-center justify-content-center my-4">
+            <div class="intro col-12">
+                <h1 class="titulo-galeria">EXPLORA NUESTRAS CATEGORIAS</h1>
+                <p class="text-muted">Descubre negocios locales, productos y servicios organizados por categorías para encontrar exactamente lo que necesitas.</p>
+                <hr class="linea-decorativa">
+            </div>
+        </div>
+
+    <!--Subtitulo galeria-->
+    <div class="row text-center mt-5 justify-content-center">
+        <div class="col-12 mb-4">
+            <h2 class="subtitulo-local h3 text-uppercase tracking-wide">ENCUENTRA LO QUE NECESITAS EN UN SOLO LUGAR</h2>
+            <p class="text-muted small">Descubre opciones confiables organizadas para una búsqueda más sencilla.</p>
+        </div>
+    </div>
+
+        <!--tarjetas-->
+        <div class="row g-3">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card tarjeta-galeria h-100">
+                    <img src="../img/imgcategoria/img/zapatillasadidas-.jpg" class="card-img" alt="Imagen no disponible">
+                    <div class="card-body">
+                        <h5 class="card-title">Calzado</h5>
+                        <p class="card-text">Calzado de todo tipo de marcas, de muy buena calidad, originales y comodos para quienes aman el deporte o gustan vestir casual</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card tarjeta-galeria h-100">
+                    <img src="../img/imgcategoria/img/ropacard.jpg" class="card-img" style="object-position: 50% 50%">
+                    <div class="card-body">
+                        <h5 class="card-title">Ropa</h5>
+                        <p class="card-text">Encuentra todo tipo de ropa, desde jeans, camisetas, hoddies y shorts para cualquier tipo de ocasión </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card tarjeta-galeria h-100">
+                    <img src="../img/imgcategoria/img/ferreteria.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Ferreteria</h5>
+                        <p class="card-text">Encontraras todo tipo de herramientas a un precio accesible</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card tarjeta-galeria h-100">
+                    <img src="../img/imgcategoria/img/tecmologia.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Tecnologia</h5>
+                        <p class="card-text">Lo mas novedoso de El Salvador en tecnologias; encuentra audifonos, mouse, teclados, componentes, etc.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card tarjeta-galeria h-100">
+                    <img src="../img/imgcategoria/img/carnes.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Carnes</h5>
+                        <p class="card-text">Encuentra los negocios con las mejores carnes de todo El Salvador</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card tarjeta-galeria h-100">
+                    <img src="../img/imgcategoria/img/FrutasyVerduras.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Frutas y verduras</h5>
+                        <p class="card-text">Variedad de frutas y verduras frescas</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card tarjeta-galeria h-100">
+                    <img src="../img/imgcategoria/img/restaurantes.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Restaurantes y emprendimientos de comida</h5>
+                        <p class="card-text">Descubre restaurantes, cafeterías y emprendimientos gastronómicos que ofrecen platillos tradicionales, comida rápida, postres y bebidas elaboradas con ingredientes de calidad y el auténtico sabor local.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card tarjeta-galeria h-100">
+                    <img src="../img/imgcategoria/img/salud.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Salud, clínica y farmacia</h5>
+                        <p class="card-text">Encuentra clínicas, farmacias y servicios de salud comprometidos con el bienestar de las personas, ofreciendo atención profesional, medicamentos y soluciones para el cuidado de la salud.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card tarjeta-galeria h-100">
+                    <img src="../img/imgcategoria/img/joyeria.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Joyeria</h5>
+                        <p class="card-text">Descubre joyerías y emprendimientos especializados en accesorios, detalles y piezas exclusivas que combinan elegancia, calidad y estilo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Subtitulo negocios destacados-->
+        <div class="row text-center mt-5 justify-content-center">
+            <div class="intro col-12 mb-4">
+                <h2 class="subtitulo-local h3 text-uppercase tracking-wide">Nuestros negocios destacados</h2>
+                <p class="text-muted small">Conoce los negocios mas recomendados</p>
+                <hr class="linea-decorativa">
+            </div>
+        </div>
+
+        <!--Tarjetas especialidades-->
+        <div class="row g-3">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card tarjeta-galeria h-100">
+                    <img src="../img/imgcategoria/img/pupuseriaandalucia.png" class="card-img" style="object-position: 50% 70%">
+                    <div class="card-body">
+                        <h5 class="card-title">Pupuseria Andalucia</h5>
+                        <p class="card-text">En este restaurante se vive un ambiente tranquilo y familiar desde que se entra. Su estilo sencillo y acogedor, junto con el aroma de las pupusas recién hechas, crea una sensación agradable y cercana. La atención es rápida y cordial, lo que hace que la experiencia sea aún más cómoda para los clientes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card tarjeta-galeria h-100">
+                    <img src="../img/imgcategoria/img/textileriaitca.png" class="card-img" style="object-position: 50% 40%">
+                    <div class="card-body">
+                        <h5 class="card-title">Textileria ITCA</h5>
+                        <p class="card-text">Encuentra una amplia variedad de telas, textiles y materiales para confección. Ofrecemos productos de calidad para proyectos de costura, manualidades, diseño y elaboración de prendas, con atención personalizada para cada cliente.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card tarjeta-galeria h-100">
+                    <img src="../img/imgcategoria/img/vetplancopia.jpeg" class="card-img-top" style="object-position: 50% 40%">
+                    <div class="card-body">
+                        <h5 class="card-title">VET-PLAN</h5>
+                        <p class="card-text">Clínica veterinaria comprometida con la salud y bienestar de tus mascotas. Ofrecemos consultas, vacunación, desparasitación, control preventivo y atención especializada para perros y gatos, brindando un servicio confiable y profesional.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card tarjeta-galeria h-100">
+                    <img src="../img/imgcategoria/img/logovalfer.jpeg" class="card-img" style="object-position: 0% 55%;">
+                    <div class="card-body">
+                        <h5 class="card-title">Valfer</h5>
+                        <p class="card-text">VALFER es un emprendimiento familiar salvadoreño especializado en la producción de café de calidad y productos derivados. Ofrece café tostado, licor de café, chocolate y otras especialidades elaboradas con dedicación y tradición, llevando el auténtico sabor del café salvadoreño a cada cliente.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card tarjeta-galeria h-100">
+                    <img src="../img/imgcategoria/img/peritechrecorte.jpeg" class="card-img" style="object-position: 50% 30%">
+                    <div class="card-body">
+                        <h5 class="card-title">PeriTech</h5>
+                        <p class="card-text">Empresa especializada en la venta de laptops, computadoras, componentes de hardware y accesorios tecnológicos. Ofrecemos equipos de calidad, soluciones para estudiantes, profesionales y empresas, además de asesoría para encontrar la tecnología que mejor se adapte a tus necesidades.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card tarjeta-galeria h-100">
+                    <img src="../img/imgcategoria/img/farmacia.png" class="card-img" style="object-position: 50% 30%">
+                    <div class="card-body">
+                        <h5 class="card-title">Farmacia Martínez</h5>
+                        <p class="card-text">Tu farmacia de confianza, donde encontrarás medicamentos, vitaminas, productos de higiene y cuidado personal. Nos esforzamos por ofrecer precios accesibles, atención personalizada y soluciones para el bienestar de toda la familia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Seccion de comentarios-->
+        <div class="row text-center mt-5 justify-content-center">
+            <div class="intro col-12 mb-4">
+                <h2 class="subtitulo-local h3 text-uppercase tracking-wide">Comentarios</h2>
+                <p class="text-muted small">Lo que dicen los clientes</p>
+                <hr class="linea-decorativa">
+            </div>
+        </div>
+            <div class="row g-3">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card tarjeta-galeria h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Carlos</h5>
+                        <p class="stars">★★★★☆</p>
+                        <p class="card-text">Antes me costaba encontrar proveedores confiables. Con SysNova pude comparar varias opciones y contactar directamente con el negocio que mejor se adaptaba a mis necesidades.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card tarjeta-galeria h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Ana</h5>
+                        <p class="stars">★★★★★</p>
+                        <p class="card-text">Encontré exactamente lo que necesitaba en pocos minutos. Me gustó que los negocios estuvieran organizados por categorías y con información clara.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card tarjeta-galeria h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Germán</h5>
+                        <p class="stars">★★★★★</p>
+                        <p class="card-text">Una excelente herramienta para encontrar productos y servicios. La navegación es intuitiva y los resultados son muy útiles.
+                        </p>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        
+
+        <!--Subtitulo local-->
+        <div class="row text-center mt-5 justify-content-center">
+            <div class="col-12 mb-4">
+                <h2 class="subtitulo-local h3 text-uppercase tracking-wide">CATEGORÍAS EN CONSTANTE CRECIMIENTO</h2>
+                <p class="text-muted small">Nuevos negocios y servicios se incorporan continuamente a las distintas categorías, ofreciendo más alternativas y oportunidades para los usuarios.</p>
+            </div>
+        </div>
+    </main>
+
+        <!--Descripcion imagen dinamica local
+        <div class="row align-items-center">
+            <div class="col-12" id="parrafo">
+                <p>
+                    En este restaurante pupusero se vive un ambiente tranquilo y familiar desde que se entra. Su estilo
+                    sencillo y acogedor, junto con el aroma de las pupusas recién hechas, crea una sensación agradable y
+                    cercana. El sonido del comal y el trato amable del personal hacen del lugar un espacio ideal para
+                    compartir en familia o con amigos. La atención es rápida y cordial, lo que hace que la experiencia
+                    sea aún más cómoda para los clientes. Además, los ingredientes frescos y el sazón casero se notan en
+                    cada bocado, invitando a regresar.
+                </p>
+            </div>
+
+            <div class="col-12 text-center mb-3">
+                <img src="#" class="img-fluid fade-img" id="info--">
+            </div>
+        </div>
+    </main>  -->
+
+<!--footer-->
+    
+<footer class="footer">   
+    <div class="footer_container">
+        <div class="footer-col">
+        <h3>SysNova</h3>
+        <p>Plataforma que impulsa el crecimiento de pequeñas y medianas empresas a través de visibilidad digital.</p>
+    </div>
+
+    <div class="footer-col">
+        <h3>Enlaces</h3>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="categorias.html">Categorias</a></li>
+                <li><a href="acercade.html">Acerca de</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+    </div>
+    <div class="footer-col">
+        <h3>Ayuda</h3>
+        <ul>
+            <li><a href="#">Preguntas frecuentes</a></li>
+            <li><a href="https://chat.whatsapp.com/Ka7jsr1b1MmJFiYyXJG0tu?s=cl&p=a&mlu=4">Soporte</a></li>
+            <li><a href="#">Términos</a></li>
+        </ul>
+    </div>
+    <div class="footer-col">
+        <h3>Contacto</h3>
+        <ul>
+            <li>Email: info@sysnova.com</li>
+            <li>Tel: +503 0000-0000</li>
+            <li>San Salvador</li>
+        </ul>
+    </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 SysNova - Todos los derechos reservados</p>
+    </div>
+</footer>
+
+<!--Ventana emergente inicio se sesion-->
+<div id="modal" class="modal">
+    <div class="modal-contenido">
+        <span class="cerrar" onclick="cerrarModal()">&times;</span>
+        <h2>Registro de Empresa</h2>
+
+        <form action="">
+        <label for="nombre" class="form-label">Nombre de la empresa</label>
+            <input type="text" placeholder="Escriba aqui" class="form-control" required>
+        <label for="Correo">Correo</label>
+            <input type="email" placeholder="Escriba aqui" class="form-control" required>
+        <label for="telefono">Telefono</label>
+            <input type="tel" placeholder="Escriba aqui" required>
+            <textarea placeholder="Descripcion" name="descripcion"></textarea>
+            <input type="submit" value="Registrar">
+        </form>
+    </div>
+</div>
+
+<!--Ventana emergente registro-->
+
+<div id="modalLogin" class="modal" >
+    <div class="modal-contenido">
+    <span class="cerrar" onclick="cerrarModalLogin()">&times;</span>
+    <h2>Inicia Sesión</h2>
+    
+    <form action="">
+    <label for="correo">Correo</label>
+        <input type="email" placeholder="Escriba aqui" required>
+    <label for="password">Contraseña</label>
+        <input type="password" placeholder="Escriba aqui" required>
+        <h5 class="forgotpassword">¿Olvidaste tu contraseña?</h5>
+        <h5 class="forgotpasswordbtn"><a href="#" style="color: #2a2fbb">Recuperar contraseña</a></h5>
+    <input type="submit" value="Iniciar Sesión">
+    </form>
+  </div>
+</div>
+
+
+
+<script src="../javascript/script.js"></script>
+</body>
+</html>
