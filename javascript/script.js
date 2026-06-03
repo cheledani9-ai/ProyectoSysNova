@@ -39,29 +39,18 @@ function toggleMenu() {
     document.querySelector('.registro').classList.toggle('abierto');
 }
 
-
 // carrusel 
 
     let current = 0;
-    const total = 4;
-    const track = document.getElementById('track');
-    const dotsContainer = document.getElementById('dots');
+const track = document.getElementById('track');
+const slides = track.querySelectorAll('.carousel-slide');
+const total = slides.length;
 
-    //for (let i = 0; i < total; i++) {
-       // const d = document.createElement('button');
-       // d.className = 'dot' + (i === 0 ? ' active' : '');
-       // d.onclick = () => goTo(i);
-        //dotsContainer.appendChild(d);
-   // }
+function goTo(n) {
+    current = (n + total) % total;
+    track.style.transform = 'translateX(-' + current * 100 + '%)';
+}
 
-    function goTo(n) {
-        current = (n + total) % total;
-        track.style.transform = 'translateX(-' + current * 100 + '%)';
-        document.querySelectorAll('.dot').forEach((d, i) => d.classList.toggle('active', i === current));
-    }
+function mover(dir) { goTo(current + dir); }
 
-    function mover(dir) { goTo(current + dir); }
-
-    setInterval(() => mover(1), 4000);
-
-
+setInterval(() => mover(1), 4000);
